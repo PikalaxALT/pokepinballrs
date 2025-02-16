@@ -72,7 +72,8 @@
 struct UnkPinballGame1334
 {
 	/*0x00*/ u8 unk0;
-	/*0x01*/ u8 filler1[0x5];
+	/*0x01*/ u8 unk1;
+	/*0x02*/ u8 filler2[0x4];
 	/*0x06*/ u16 unk6;
 	/*0x08*/ u8 filler8[0x6];
 	/*0x0E*/ u16 unkE;
@@ -80,7 +81,10 @@ struct UnkPinballGame1334
 	/*0x12*/ s16 unk12;
 	/*0x14*/ u8 filler14[0xB];
 	/*0x1F*/ u8 unk1F;
-	/*0x20*/ u8 filler20[0x10];
+	/*0x20*/ u8 filler20[8];
+	/*0x28*/ s16 unk28;
+	/*0x2A*/ s16 unk2A;
+	/*0x2C*/ u8 filler2C[4];
 	/*0x30*/ u16 unk30;
 	/*0x32*/ u16 unk32;
 	/*0x34*/ u32 unk34;
@@ -177,7 +181,9 @@ struct PinballGame
 	/*0x59A*/ u8 filler59A[0x2];
 	/*0x59C*/ u16 unk59C; // Previous catch mode species?
 	/*0x59E*/ u16 unk59E; // Previous hatch/evo mode species?
-	/*0x5A0*/ u8 filler5A0[0x50];
+	/*0x5A0*/ u8 filler5A0[0x12];
+	u8 unk5B2;
+	u8 filler5B3[0x3D];
 	/*0x5F0*/ u16 caughtMonCount; // Number of mons caught in this game
 	/*0x5F2*/ u8 filler5F2[0x4];
 	/*0x5F6*/ s8 unk5F6;
@@ -216,7 +222,9 @@ struct Unk02031520
 {
 	/*0x00*/ u8 filler0[0x8];
 	/*0x08*/ s16 unk8;
-	/*0x0A*/ u8 fillerA[0x22];
+	/*0x0A*/ u8 fillerA[0x1C];
+	/*0x26*/ s16 unk26;
+	/*0x28*/ s16 unk28;
 	/*0x2C*/ u8 *unk2C;
 };
 
